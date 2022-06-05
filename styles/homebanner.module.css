@@ -1,0 +1,45 @@
+.banner__container {
+    margin-top: 4rem;
+    display: grid;
+}
+
+@media (min-width:1024px) {
+    .banner__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.banner__typography {
+    padding-left: 5px;
+    padding-top: 5px;
+
+}
+
+.banner__typography h1 {
+    font-size: 45px;
+    line-height: 2.3rem;
+}
+
+.banner__typography p {
+    color: rgb(91, 91, 91);
+    margin-top: 12px;
+}
+
+.banner__images {
+    grid-column: span 2;
+}
+
+.banner__btn {
+    background-color: black;
+    color: white;
+    padding: 10px 22px;
+    transition: .5s;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.banner__btn:hover {
+    background-color: transparent;
+    color: black;
+}
