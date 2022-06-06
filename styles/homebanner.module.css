@@ -1,23 +1,23 @@
 .banner__container {
     margin-top: 4rem;
     display: grid;
+    place-items: center;
+    margin-bottom: 40px;
 }
 
-@media (min-width:1024px) {
-    .banner__container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
+
 
 .banner__typography {
-    padding-left: 5px;
+    padding-left: 15px;
     padding-top: 5px;
+    grid-column: span 1;
+    width: 100%;
 
 }
 
 .banner__typography h1 {
     font-size: 45px;
-    line-height: 2.3rem;
+    line-height: 2.6rem;
 }
 
 .banner__typography p {
@@ -26,20 +26,15 @@
 }
 
 .banner__images {
-    grid-column: span 2;
+    margin: 3rem 0;
 }
 
-.banner__btn {
-    background-color: black;
-    color: white;
-    padding: 10px 22px;
-    transition: .5s;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 20px;
-}
+@media (min-width:1024px) {
+    .banner__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
-.banner__btn:hover {
-    background-color: transparent;
-    color: black;
+    .banner__images {
+        grid-column: span 2;
+    }
 }
