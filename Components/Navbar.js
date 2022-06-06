@@ -15,7 +15,7 @@ export default function Navbar() {
     });
   }, []);
   return (
-    <nav className={navStyles.nav} style={top ? { backdropFilter: "blur(12px)" } : { backdropFilter: "none" }}>
+    <nav className={navStyles.nav} style={top ? { backdropFilter: "blur(12px)", color: "gray" } : { backdropFilter: "none" }}>
       <div className={navStyles.logo}>
         <h1>POW.</h1>
       </div>

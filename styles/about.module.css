@@ -1,0 +1,48 @@
+.about__heading {
+    font-weight: 300;
+    font-size: 50px;
+}
+
+.about__tagline {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.about__container {
+    padding: 50px;
+}
+
+.about__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about__typography p {
+    margin-top: 10px;
+}
+
+.about__form h1 {
+    text-align: center;
+}
+
+.about__form input {
+    display: block;
+    width: 75%;
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    background-color: rgb(232, 232, 232);
+    border-radius: 5px;
+}
+
+.about__form input:focus {
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.56);
+}
+
+.about__form button {
+    margin: 0 auto;
+    display: block;
+    width: 75%;
+}

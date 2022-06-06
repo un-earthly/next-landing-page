@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Banner from '../Components/Banner.js'
 import Discover from '../Components/Discover.js'
+import About from '../Components/About.js'
 import Footer from '../Components/Footer'
 import Homebanner from '../Components/Homebanner'
 import Navbar from '../Components/Navbar'
@@ -19,6 +20,7 @@ export default function Home() {
         <Homebanner />
         <Skates />
         <Discover />
+        <About />
         <Banner />
         <Footer />
       </main>
