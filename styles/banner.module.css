@@ -1,0 +1,65 @@
+.banner__container {
+    background-image: linear-gradient(to top, #2a75ff, var(--primary));
+    color: white;
+    margin-top: 5rem;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.banner__container *+* {
+    margin-top: 10px;
+}
+
+.banner__container h1 {
+    font-size: 30px;
+}
+
+.banner__container i {
+    font-size: 30px;
+}
+
+
+.banner__container button {
+    background-color: white;
+    color: var(--primary);
+    padding: 10px 22px;
+    border-radius: 100rem;
+    border: none;
+    font-size: 18px;
+    transition: all .5s;
+}
+
+.banner__container button:hover {
+    color: white;
+    background-color: transparent;
+}
+
+@media (min-width:1024px) {
+    .banner__container {
+        flex-direction: row;
+    }
+
+    .banner__container *+* {
+        margin-left: 30px;
+    }
+
+    .banner__container h1 {
+        font-size: 70px;
+    }
+
+    .banner__container i {
+        font-size: 50px;
+    }
+
+    .banner__container button {
+        padding: 20px 32px;
+        border-radius: 100rem;
+        border: none;
+        font-size: 30px;
+        transition: all .5s;
+    }
+}

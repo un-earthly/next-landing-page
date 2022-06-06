@@ -1,0 +1,51 @@
+.discover__container {
+    margin: 5rem 0;
+    padding: 1rem;
+}
+
+.discover__container h1 {
+    padding: 1rem;
+}
+
+.discover__items {
+    display: grid;
+    place-items: center;
+    grid-column-gap: 20px;
+}
+
+.discover__card {
+    position: relative;
+    cursor: pointer;
+}
+
+.discover__card__details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+@media (min-width:1024px) {
+
+    .discover__items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .discover__card__details h3 {
+        font-weight: 400;
+        font-size: 3rem;
+    }
+
+    .discover__card__details p {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+}

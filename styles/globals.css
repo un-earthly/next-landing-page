@@ -16,6 +16,10 @@ body {
   font-family: "Roboto";
 }
 
+button {
+  cursor: pointer;
+}
+
 .relative {
   position: relative;
 }
