@@ -1,11 +1,21 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import navStyles from "../styles/nav.module.css"
 export default function Navbar() {
+  const [top, setTop] = useState(false)
   const [open, setOpen] = useState(false)
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        setTop(true);
+      } else {
+        setTop(false);
+      }
+    });
+  }, []);
   return (
-    <nav className={navStyles.nav}>
+    <nav className={navStyles.nav} style={top ? { backdropFilter: "blur(12px)" } : { backdropFilter: "none" }}>
       <div className={navStyles.logo}>
         <h1>POW.</h1>
       </div>

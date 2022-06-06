@@ -1,0 +1,28 @@
+.skates__container button {
+    display: block;
+    width: 50%;
+    margin: 1rem auto;
+    border: none;
+    font-weight: 600;
+}
+
+.skates__container button:hover {
+    border: none;
+}
+
+.skate__container {
+    display: grid;
+    grid-gap: 3rem;
+    place-content: center;
+    place-items: center;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+
+
+@media (min-width:1024px) {
+    .skate__container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
