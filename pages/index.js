@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Features from '../Components/Features'
+import Footer from '../Components/Footer'
 import Homebanner from '../Components/Homebanner'
 import Navbar from '../Components/Navbar'
 import Skates from '../Components/Skates'
@@ -17,6 +18,7 @@ export default function Home() {
         <Homebanner />
         <Skates />
         <Features />
+        <Footer />
       </main>
     </div>
   )
